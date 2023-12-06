@@ -4,7 +4,16 @@
 */
 
 function isPalindrome(str) {
-  return true;
+  if(str.length === 0)
+    return true;
+    str = str.replace(/[.,\/#!$%?\^&\*;:{}=\-_`~()]/g,"");
+  let arr = str.toLowerCase().split('');
+  for(i=0; i<arr.length; i++){
+    if(arr[i] === arr[arr.length-1-i])
+      return true;
+    else
+      return false;
+  }
 }
 
 module.exports = isPalindrome;
