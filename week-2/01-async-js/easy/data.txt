@@ -1,0 +1,1 @@
+Random text to be read using fs function in javascript.
